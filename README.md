@@ -37,28 +37,3 @@ A diferencia de los entornos simulados tradicionales, la mayor parte de este tra
     ├── 02-pcap-analysis.md         # Análisis forense de tráfico de red y balizamiento (C2)
     ├── 03-dfir-report-gap-analysis.md # Ingeniería inversa de amenazas en nuestro entorno
     └── 04-cyberdefenders-reto.md   # Resolución de retos interactivos de endpoint
-
----
-
-## 📈 Proyectos Destacados e Hitos de Aprendizaje
-
-### 1. Ingeniería de Detección Práctica (SigmaHQ ➡️ Wazuh)
-Creación, testeo y despliegue de reglas de detección basadas en comportamiento para evadir la obsolescencia de los IOCs estáticos. Cada una de las reglas creadas en la carpeta `/sigma-rules/` incluye un análisis exhaustivo de falsos positivos teóricos y reales identificados en producción.
-* **Detección de Movimiento Lateral y Autenticaciones Anómalas:** Reglas específicas para conexiones RDP originadas fuera del rango controlado de nuestra flota de terminales móviles (PDAs).
-* **Monitoreo de Infraestructura Crítica:** Control estricto de la creación de nuevos servicios del sistema (T1543.003) en servidores Windows legados.
-* **Evasión de Defensa y PowerShell:** Reglas orientadas a interceptar la ejecución de comandos PowerShell codificados en Base64 (T1059.001) a nivel de servidor.
-
-### 2. Análisis de Incidentes en Escenarios Reales (Writeups)
-Documentación meticulosa bajo un estándar profesional que detalla no solo la detección de un ataque, sino su mitigación sistemática:
-* **Ataque de Fuerza Bruta IPv6 (M365):** Mapeo completo en la matriz ATT&CK (T1110.003 - Password Spraying), análisis de correlación temporal, geolocalización de ASNs atacantes e implementación de políticas de mitigación.
-* **Análisis Forense de Red:** Identificación de flujos de beaconing (balizamiento), exfiltración DNS y reconocimiento de tráfico Command & Control (C2) utilizando capturas de paquetes (PCAP).
-
----
-
-## 🎯 Filosofía de Defensa
-
-> *"Detectar un hash es trivial y molesta poco al atacante; cambiar el costo de su operación detectando sus tácticas, técnicas y procedimientos (TTPs) es lo que realmente nos da la ventaja."* — Adaptado del concepto de Pyramid of Pain (David Bianco).
-
-Mi enfoque técnico se basa en la **Detección de Comportamientos Excepcionales** y la mejora proactiva de la visibilidad corporativa a través de la instrumentación de logs detallados (Sysmon + logs de cortafuegos de frontera), reduciendo el ruido operativo mediante una estricta estrategia de afinación (tunning) para evitar la fatiga por alertas.
-
----
