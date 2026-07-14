@@ -22,7 +22,7 @@ A diferencia de los entornos simulados tradicionales, la mayor parte de este tra
 ---
 
 ## 📂 Estructura del Repositorio
-.
+
 ├── 📂 coverage/               # Evaluaciones de cobertura y visibilidad
 │   └── wazuh-attack-coverage.json  # Capa de MITRE ATT&CK Navigator
 ├── 📂 docs/                   # Filosofía de detección y criterios del SOC
